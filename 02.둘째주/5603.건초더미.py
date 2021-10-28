@@ -10,7 +10,7 @@ for tc in range(1, int(input()) + 1):
         arr.append(int(input()))
 
     avg = sum(arr)//N
-    ans = 0
+    cnt = 0
     for i in range(N):
-        ans += abs(arr[i]-avg)
-    print('#{} {}'.format(tc, ans//2))
+        cnt += abs(arr[i] - avg)
+    print('#{} {}'.format(tc, cnt // 2))

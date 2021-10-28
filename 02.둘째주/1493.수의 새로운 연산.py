@@ -20,11 +20,11 @@ for tc in range(1, int(input()) + 1):
     px, py = find(p)
     qx, qy = find(q)
 
-    ans = step = 1
+    cnt = step = 1
     for _ in range(px + qx - 1):
         step += 1
-        ans += step
+        cnt += step
     for _ in range(py + qy - 1):
-        ans += step
+        cnt += step
         step += 1
-    print('#{} {}'.format(tc, ans))
+    print('#{} {}'.format(tc, cnt))

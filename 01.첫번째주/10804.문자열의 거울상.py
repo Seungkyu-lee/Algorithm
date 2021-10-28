@@ -14,6 +14,6 @@ for tc in range(1, int(input()) + 1):
     mir = []
     for i in arr:
         mir.append(mirror[i])
-    ans = ''.join(mir[::-1])
+    cnt = ''.join(mir[::-1])
 
-    print('#{} {}'.format(tc, ans))
+    print('#{} {}'.format(tc, cnt))
